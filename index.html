@@ -1,27 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>vanilla js app</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="js-clock">
-      <h1>clock</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>App</title>
+</head>
+<body>
+    <form id="login-form" class="hidden">
+        <input 
+            required
+            maxlength="15"
+            type="text" 
+            placeholder="What's your name?"
+        >
+        <input type="submit" value="Login">
+    </form>
+    <button type="button" id="logoutBtn" class="hidden">Logout</button>
+    <h2 id="clock">00:00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <div id="quote">
+        <span></span>
+        <span></span>
     </div>
-    <form class='js-form form'>
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDoList"></ul>
-    <span class="js-weather"></span>
-    <script src="clock.js"></script>
-    <script src="greeting.js"></script>
-    <script src="todo.js"></script>
-    <script src="background.js"></script>
-    <script src="weaher.js"></script>
-  </body>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+</body>
 </html>
